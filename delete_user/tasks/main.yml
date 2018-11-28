@@ -1,0 +1,8 @@
+---
+- name: "delete_user"
+  user:
+          name: "{{ item }}"
+          state: absent
+  loop:
+          "{{ users }}"
+# tasks file for delete_user

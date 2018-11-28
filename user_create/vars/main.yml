@@ -1,0 +1,5 @@
+---
+users:
+        - abc
+        - pqr
+# vars file for user_create

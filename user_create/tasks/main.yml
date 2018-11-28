@@ -1,0 +1,11 @@
+---
+- name: "create_user"
+  user: 
+         name: "{{ item }}"
+  loop:
+         "{{ users }}"
+- name: "Get facts via templet"
+  template:
+          src: get_facts.txt.j2
+          dest: /tmp/op_of_template.txt
+# tasks file for user_create
